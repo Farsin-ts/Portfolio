@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farsin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="f-solid.svg" sizes="17x17" >
+    <script src="https://kit.fontawesome.com/74c192aeed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <h1 id="logo"><span id="firstLetter">F</span>arsin.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi,I'm <span class="name">Farsin</span><br>From Kerala,India</h1>
+            </div>
+        </div> 
+    </div>
+    <!----------------------About---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="farsin.jpg" alt="Personal Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">About Me</h1>
+                    <p>I am a dedicated and passionate self-learner currently mastering HTML, CSS, and JavaScript. With a strong commitment to expanding my skills and knowledge in web development, I have successfully completed my studies in these core technologies. My journey in self-learning has equipped me with a solid foundation and the ability to create dynamic and responsive web applications. I am excited to continue honing my skills and contributing to innovative projects in the tech world.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Creating Interactive Websites</li>
+                            <li><span>CSS</span><br>Overall visual appearance of web pages</li>
+                            <li><span>JS</span><br>Interactive web content</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Internship</li>
+                            <li><span>2021 - 2024</span><br>Sales</li>
+                            <!--<li><span>2019 - 2021</span><br>Studying</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education"> 
+                        <ul>
+                            <li><span>2021 - 2024</span><br>Degree</li>
+                            <li><span>2019 - 2021</span><br>Higher Secondary</li>
+                            <li><span>     - 2018</span><br>Studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------services---------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div> 
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>HTML is the fundamental building block of the web, used to create and structure content on the internet. It provides the backbone for web pages by defining the layout, formatting, and organization of text, images, links, and other multimedia.</p>
+                    <a href="https://www.w3schools.com/html/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It controls the layout, colors, fonts, and overall visual appearance of web pages.</p>
+                    <a href="https://www.w3schools.com/css/default.asp">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JS</h2>
+                    <p>JavaScript is a versatile and powerful programming language used primarily for creating dynamic and interactive web content. It allows developers to enhance user experience by enabling features such as interactive forms, animations, and real-time updates without reloading the page.</p>
+                    <a href="https://www.w3schools.com/js/default.asp">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------Portfolio------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Temperature Converter</h3>
+                        <p>Transform temperatures with our tool, converting between Fahrenheit and Celsius in seconds.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Bank Balance Checker</h3>
+                        <p>Easily manage your finances with our Simple Bank Balance Checker.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>W3Scool nav bar</h3>
+                        <p>The navigation bar of a website that helps users navigate through the site's content efficiently.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <!----------Contact-------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> farsin474@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9188234181</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/_mhd_farsin/profilecard/?igsh=MWUwMzNhZ3FseWhwNQ== "><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-farsin-b868a825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV.pdf" class="btn btn2" download="mycv.pdf">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright © Farsin</p>
+        </div>
+        
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwbQJlaXEEK2Bvdwfv0i_gtpBWDDSCrcA7ZRo4Kxv7oh0ieAioTDd0EmPmpQ2EX8Dm-/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },500)
+                form.reset()
+            })                
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

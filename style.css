@@ -166,6 +166,7 @@ nav ul li a:hover::after{
 
 #services{
     padding: 80px;
+
 }
 
 .services-list{
@@ -213,6 +214,7 @@ nav ul li a:hover::after{
 
 #portfolio{
     padding: 80px;
+    padding-top: 160px;
 }
 
 .work-list{
